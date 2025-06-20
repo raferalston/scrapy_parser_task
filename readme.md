@@ -1,23 +1,23 @@
-### Как использовать
+# Scrapy Parser Task
+
+Парсер на базе [Scrapy](https://scrapy.org/) для извлечения структурированных данных с целевого сайта.
+
+## Как использовать
 - py -m venv env
 - env\Scripts\activate или source env\bin\activate
 - pip install requirements.txt
 
-### Тесты
+## Тесты
 - cd hh_task_project
 - pytest
 
-### Запуск парсилки
+## Запуск парсилки
 - scrapy crawl goods_parser -O result.json
 
-### FAQ
+## FAQ
 - В settings.py указать нужные урлы в переменной START_URLS
 - По api собираем данные, поэтому город указывается в виде uuid в переменной CITIES_UUID
 - Прокси вкл/выкл в переменной PROXY
-
-# Scrapy Parser Task
-
-Парсер на базе [Scrapy](https://scrapy.org/) для извлечения структурированных данных с целевого сайта.
 
 ## Цель проекта
 
